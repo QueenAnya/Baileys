@@ -62,7 +62,7 @@
     "pino": "^7.0.0",
     "protobufjs": "^6.11.3",
     "uuid": "^9.0.0",
-    "ws": "^8.13.0"
+    "ws": "^8.13.0",
     "yt-search": "npm:@queenanya/ytsearch",
     "ytdl-core": "npm:@queenanya/ytdlcore",
     "youtube-yts": "npm:@queenanya/ytsearch",
