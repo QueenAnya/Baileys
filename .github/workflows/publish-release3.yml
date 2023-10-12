@@ -2,8 +2,8 @@ name: Publish Release
 
 on:
   push:
-    branches:
-      - master
+    tags:
+      - "v*"
 
 permissions: write-all
 
@@ -66,9 +66,9 @@ jobs:
       - name: Create Release
         uses: meeDamian/github-release@2.0
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GIITHUB_TOKEN }}
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GIITHUB_TOKEN }}
           tag: ${{ github.ref }}
           commitish: ${{ github.sha }}
           name: ${{ github.ref_name }}
