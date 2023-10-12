@@ -45,7 +45,7 @@ jobs:
        - name: Release Test
         run: npm release
         
-      - name: Release Test 2
+      - name: Release Test2
         run: yarn release
 
       - name: Release
