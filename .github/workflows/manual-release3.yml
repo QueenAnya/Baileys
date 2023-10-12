@@ -41,6 +41,7 @@ jobs:
 
       - name: Install Dependencies
         run: yarn
+        run: yarn release
 
       - name: Release
         run: "npx release-it --increment ${{ github.event.inputs.increment }}"
