@@ -40,8 +40,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install Dependencies
-      run: |
-          yarn
+      run: yarn
 
       - name: Release
         run: "yarn release-it ${{ github.event.inputs.increment }}"
