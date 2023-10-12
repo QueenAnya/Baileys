@@ -41,7 +41,11 @@ jobs:
 
       - name: Install Dependencies
         run: yarn install
+        
+       - name: Release Test
         run: npm release
+        
+      - name: Release Test 2
         run: yarn release
 
       - name: Release
