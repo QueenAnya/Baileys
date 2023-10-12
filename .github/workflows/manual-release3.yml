@@ -1,4 +1,4 @@
-name: Manual Release
+name: Manual Release 3
 
 on:
   workflow_dispatch:
@@ -43,4 +43,4 @@ jobs:
         run: yarn
 
       - name: Release
-        run: "npx release-it --increment ${{ github.event.inputs.increment }}"
+        run: "yarn release-it ${{ github.event.inputs.increment }}"
