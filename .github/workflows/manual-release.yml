@@ -1,4 +1,4 @@
-name: Manual Release 7644
+name: Manual Release
 
 on:
   workflow_dispatch:
@@ -40,10 +40,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install Dependencies
-      run: |
-          yarn install
-          npm release
-          yarn release
+        run: yarn
 
       - name: Release
         run: "npx release-it --increment ${{ github.event.inputs.increment }}"
